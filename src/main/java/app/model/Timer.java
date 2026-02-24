@@ -2,7 +2,7 @@ package app.model;
 
 import org.springframework.stereotype.Component;
 
-@Component  // Добавляем эту аннотацию
+@Component
 public class Timer {
 
     private Long nanoTime = System.nanoTime();

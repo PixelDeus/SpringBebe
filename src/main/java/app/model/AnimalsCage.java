@@ -8,18 +8,17 @@ import org.springframework.stereotype.Component;
 public class AnimalsCage {
 
     @Autowired
-    @Qualifier("dog")  // Явно указываем, что хотим бин с именем "dog"
+    @Qualifier("dog")
     private Animal animal;
 
     @Autowired
-    private Timer timer;  // Внедряем бин Timer
+    private Timer timer;
 
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
         System.out.println(timer.getTime());
-        System.out.println("________________________");
     }
 
     public Timer getTimer() {
